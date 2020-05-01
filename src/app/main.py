@@ -4,9 +4,9 @@ app = FastAPI()
 
 
 @app.get("/ping")
-def pong():
+async def pong():
     return {"ping": "pong!"}
 
 @app.get("/hello")
-def hello():
+async def hello():
     return {"hello": "hi!"}
